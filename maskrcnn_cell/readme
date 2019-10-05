@@ -1,0 +1,13 @@
+1、未加入attention之前 、改变backbone做对比实验，找出效果最好的3个backbone
+2、在选出�?个backbone之上加入attention，做对比实验  （不能再使用预训练模型）
+3、最终对比：普通maskrcnn、改变backbone之后的maskrcnn、加入attention之后的maskrcnn  做对�?
+             
+batch_size�?
+epochs�?00
+learning_rate�?.0005
+
+学习率改变方式：
+torch.optim.lr_scheduler.StepLR(optimizer,step_size=20,gamma=0.1)
+
+list to do：
+对另外两个模型加入attention
